@@ -3,7 +3,6 @@ title: "🚀 Optimizing PySpark Shuffle Partitions on AWS Glue: A 32% Speed Boos
 date: 2025-05-01
 ---
 
-# 🚀 Optimizing PySpark Shuffle Partitions on AWS Glue: A 32% Speed Boost Without Extra Workers
 At my team, we rely on a modern data stack built on AWS: Step Functions for orchestration, Athena for ad-hoc queries, S3 for storage, Lambda for lightweight processing, and PySpark jobs running on AWS Glue for heavier data transformations.
 
 Recently, we encountered performance issues with one of our production Glue jobs and managed to cut execution time by 32%—from 40 to 25 minutes—without increasing worker count. Instead, we optimized the number of shuffle partitions. Here’s how we approached it.
